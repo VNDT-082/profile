@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZALO: Võ Nguyễn Duy Tân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="name">
+            <a href="/index.html">
+                <h1>VNDT-082 <br /><span>my profile</span></h1>
+            </a>
+        </div>
+
+        <ul id="list1">
+            <li>RESUME</li>
+            <li>PROJECT</li>
+            <li>Roadmaps</li>
+        </ul>
+
+        <button id="nav-button">
+            <i class="fa fa-bars" aria-hidden="true" style="transform: scale(4)"></i>
+        </button>
+        <ul id="list2">
+            <li>RESUME</li>
+            <li>PROJECT</li>
+            <li>Roadmaps</li>
+        </ul>
+    </nav>
+    <div class="hr"></div>
+    <main id="main">
+        <div id="main-info">
+            <div class="intro-info">
+                <h2 class="name name-main" style="width: 100%; text-align: center; 
+                text-transform: uppercase;">Welcome to</h2>
+                <h1 class="name name-main" style="width: 100%; text-align: center; 
+                text-transform: uppercase;">Võ Nguyễn Duy Tân</h1>
+                <ul>
+                    <li>
+                        <a href="https://github.com/VNDT-082"><img src="/icons8-github-128.png" /></a>
+                    </li>
+                    <li id="gamil">
+                        <a><img src="/icons8-email-96.png" /><br />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/qrzalo.html"><img src="/icons8-zalo-96.png" /></a>
+                    </li>
+                </ul>
+                <h5 id="gmail-value" class="name-main" style="display: none;">vonguyenduytan08022002@gmail.com</h5>
+            </div>
+            <div class="intro-avarta">
+                <div>
+                    <img src="/zalo.jpg" />
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        var btnToggle = document.getElementById('nav-button');
+        btnToggle.addEventListener('click', function () {
+            var list = document.getElementById('list2');
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        });
+
+        var gamil = document.getElementById('gamil');
+        gamil.addEventListener('click', function () {
+            var list = document.getElementById('gmail-value');
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
