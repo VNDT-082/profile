@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Nguyễn Duy Tân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="name">
+            <a href="/index.html">
+                <h1>VNDT-082 <br /><span>my profile</span></h1>
+            </a>
+        </div>
+
+        <ul id="list1">
+            <li><a href="/resume.html">RESUME</a></li>
+            <li><a href="/project.html">PROJECT</a></li>
+            <li><a href="/roadsmap.html">Roadmaps</a></li>
+        </ul>
+
+        <button id="nav-button">
+            <i class="fa fa-bars" aria-hidden="true" style="transform: scale(4)"></i>
+        </button>
+        <ul id="list2">
+            <li><a href="/resume.html">RESUME</a></li>
+            <li><a href="/project.html">PROJECT</a></li>
+            <li><a href="/roadsmap.html">Roadmaps</a></li>
+        </ul>
+    </nav>
+    <div class="hr"></div>
+    <main id="main">
+
+        <div class="col-3">
+            <h1><b>SUMMARY:</b></h1>
+            <ul>
+                <li>
+                    I am a final-year student at HO CHI MINH CITY UNIVERSITY OF INDUSTRY AND TRADE (HUIT)
+                    , majoring in Information Technology with a specialization in Software Engineering.
+                    (since: 2020)
+                    <br />
+                    <b style="color: red;">Semester GPA: 7,46 (GPA out of 4: 3.05).</b>
+                </li>
+                <li>
+                    I have experiance and strong at Software and Web Application with C# and using framework as
+                    <b style="color: chartreuse;">ASP.NET</b>,
+                    <b style="color: chartreuse;">ASP.NET Core</b>,
+                    <b style="color: chartreuse;">Entity Framework</b>,
+                    <b style="color: chartreuse;">ADO.NET</b> and database:
+                    <b style="color: chartreuse;">SQL Server</b>.
+                </li>
+                <li>
+                    I have <b style="color: red;">three month internship</b> at
+                    <b><a style="color: blue;" href="https://amazingtech.vn">amazingtech.vn</a></b> with position C#
+                    ASP.NET Core back-end
+                    development. And I was take part in project "Nhà máy nước" in there.
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h2><b>TECHNOLOGIES & SKILLS:</b></h2>
+            <ul>
+                <li><b>Programing language:</b>
+                    <ul>
+                        <li>Back-end:
+                            <ul>
+                                <li><b style="color: blue;">C# (C-Sharp):</b> ASP.NET, ASP.NET Core, .NET Framework,
+                                    Entity Framework, ADO.NET</li>
+                                <li><b style="color: blue;">Java:</b> Swing, Android</li>
+                                <li><b style="color: blue;">PHP:</b> PHP Core</li>
+                            </ul>
+                        </li>
+                        <li>Front-end:
+                            <ul>
+                                <li><b style="color: red;">HTML, CSS, JS</b></li>
+                                <li><b style="color: red;">ReactJS ➡ NEXTJS</b></li>
+                            </ul>
+                        </li>
+                        <li><b style="color: chartreuse;">Testing</b></li>
+                    </ul>
+
+                </li>
+                <li><b>Database:</b>
+                    <ul>
+                        <li><b style="color: yellow;">Microsoft SQL Server</b></li>
+                        <li><b style="color: yellow;">MySQL</b></li>
+                        <li><b style="color: yellow;">MongoDB</b></li>
+                    </ul>
+                </li>
+                <li><b>IDE:</b>Visual Studio, Visual Studio Code, Android Studio, NetBeans,
+                    Microsoft SQL Server.</li>
+                <li><b style="color: red;">Git</b></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h1><b>EXPERIANCES:</b></h1>
+        </div>
+        <div class="col-3">
+            <h1><b>ABOUT ME:</b></h1>
+            <h3 style="text-decoration: none;">Name:
+                <b style="color: crimson; ">Võ Nguyễn Duy Tân</b>
+            </h3>
+            <h3 style="text-decoration: none;">Date of birth:
+                <b style="color: crimson; ">08/02/2002</b>
+            </h3>
+            <h3 style="text-decoration: none;">Address:
+                <b style="color: crimson; ">Tiền Giang</b>
+            </h3>
+        </div>
+
+    </main>
+
+    <script>
+        var btnToggle = document.getElementById('nav-button');
+        btnToggle.addEventListener('click', function () {
+            var list = document.getElementById('list2');
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
